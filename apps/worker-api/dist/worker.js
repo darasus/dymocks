@@ -895,7 +895,7 @@ const Bucketer_1 = __webpack_require__(/*! ./Bucketer */ "./src/lib/exp/Bucketer
 const Config_1 = __webpack_require__(/*! ./Config */ "./src/lib/exp/Config.ts");
 class Engine {
     static TOTAL_BUCKETS = 10000;
-    static TRAFFIC_ALLOCATION_SALT = 'tas';
+    static TRAFFIC_ALLOCATION_SALT = "tas";
     config;
     bucketer;
     evaluator;
@@ -911,11 +911,10 @@ class Engine {
         this.userId = userId;
         this.attributes = attributes;
     }
-    computeKey(id, userId = '', salt = '') {
-        return (userId || this.userId || '').concat(id).concat(salt);
+    computeKey(id, userId = "", salt = "") {
+        return (userId || this.userId || "").concat(id).concat(salt);
     }
     getForcedVariation(experimentId) {
-        console.log(JSON.stringify(this.cache));
         return this.cache[experimentId];
     }
     getUserId() {
