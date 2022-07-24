@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "./build",
     "module": "commonjs",
     "target": "esnext",
     "lib": ["esnext", "dom"],
@@ -17,5 +17,5 @@
     ]
   },
   "include": ["src", "index.d.ts"],
-  "exclude": ["node_modules", "dist", "test"]
+  "exclude": ["node_modules", "build", "test"]
 }

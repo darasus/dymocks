@@ -1,14 +1,14 @@
 {
   "name": "worker-api",
   "version": "1.0.0",
-  "main": "dist/worker.js",
+  "main": "build/worker.js",
   "scripts": {
     "build": "webpack",
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "test": "jest --config jestconfig.json --verbose",
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler publish dist/worker.js"
+    "deploy": "wrangler publish build/worker.js"
   },
   "author": "author",
   "license": "MIT OR Apache-2.0",
