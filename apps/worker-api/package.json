@@ -7,7 +7,7 @@
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "test": "jest --config jestconfig.json --verbose",
-    "dev": "wrangler dev src/index.ts",
+    "dev": "wrangler dev -l index.ts",
     "deploy": "wrangler publish build/worker.js"
   },
   "author": "author",

@@ -7,6 +7,10 @@ const { url } = new UrlBuilder({
   model: {
     firstName: "firstName",
     lastName: "lastName",
+    middleName: "middleName",
+    gender: "gender",
+    jobTitle: "jobTitle",
+    jobType: "jobType",
   },
 });
 
