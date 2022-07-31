@@ -1,14 +1,11 @@
 {
-  "name": "@ultra/nextjs",
+  "name": "@dymock/url-builder",
   "version": "0.0.0",
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
     "lint": "eslint *.ts*"
-  },
-  "dependencies": {
-    "next": "^12.2.3"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

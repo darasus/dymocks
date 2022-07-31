@@ -5,9 +5,3 @@ compatibility_date = "2022-06-20"
 
 [build]
 command = "yarn && yarn build"
-
-[env.dev]
-[[kv_namespaces]]
-  binding = "EXPERIMENTS"
-  id = "5b3aa422657741219938898c3f3a9a99"
-  preview_id = "649f4a4a9d7343f3b385bd14b74163cf"

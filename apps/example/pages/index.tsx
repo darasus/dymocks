@@ -1,18 +1,19 @@
-import { GetServerSideProps } from "next";
-import { Button } from "ui";
-import { getUltra } from "@ultra/nextjs";
+import { useQuery } from "@tanstack/react-query";
+import { UrlBuilder } from "@dymock/url-builder";
 
-export default function Web() {
-  return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+const { url } = new UrlBuilder({
+  name: "user",
+  type: "single",
+  model: {
+    firstName: "firstName",
+    lastName: "lastName",
+  },
+});
+
+export default function Index() {
+  const { data } = useQuery(["data"], () =>
+    fetch(url).then((res) => res.json())
   );
+
+  return <div>{JSON.stringify(data)}</div>;
 }
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  console.log({ getServerSidePropsCookies: getUltra(ctx) });
-
-  return { props: {} };
-};

@@ -1,5 +1,5 @@
 {
-  "name": "worker-api",
+  "name": "@dymock/worker-api",
   "version": "1.0.0",
   "main": "build/worker.js",
   "scripts": {
@@ -19,10 +19,17 @@
       "prettier"
     ]
   },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "ramda": "^0.28.0",
+    "@dymock/url-builder": "*"
+  },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.14.1",
+    "@faker-js/faker": "^7.3.0",
     "@types/jest": "^26.0.23",
     "@types/json-logic-js": "^2.0.1",
+    "@types/ramda": "^0.28.15",
     "@types/service-worker-mock": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
@@ -37,11 +44,5 @@
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
-  },
-  "dependencies": {
-    "json-logic-js": "^2.0.2",
-    "murmurhash": "^2.0.1",
-    "studyjs": "^5.0.3",
-    "tesfy": "^1.2.1"
   }
 }
