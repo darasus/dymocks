@@ -1,4 +1,4 @@
-import { DataType } from "@dymock/url-builder";
+import { DataType } from "dymock";
 import { keys } from "ramda";
 import { mapModelToData } from "./mapModelToData";
 import { parseModel } from "./parseModel";

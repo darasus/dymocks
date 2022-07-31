@@ -22,7 +22,7 @@
   "dependencies": {
     "invariant": "^2.2.4",
     "ramda": "^0.28.0",
-    "@dymock/url-builder": "*"
+    "dymock": "*"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.14.1",

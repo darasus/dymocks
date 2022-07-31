@@ -1,4 +1,4 @@
-import { DataType } from "@dymock/url-builder";
+import { DataType } from "dymock";
 
 export const parseModel = (
   modelString: string

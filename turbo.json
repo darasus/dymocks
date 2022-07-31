@@ -11,7 +11,7 @@
     "dev": {
       "cache": false
     },
-    "migrate": {
+    "deploy": {
       "cache": false
     }
   }

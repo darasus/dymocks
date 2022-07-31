@@ -1,4 +1,4 @@
-import { DataType } from "@dymock/url-builder";
+import { DataType } from "dymock";
 import { faker } from "@faker-js/faker";
 
 export const mapModelToData = (key: DataType): string => {

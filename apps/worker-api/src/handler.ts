@@ -1,5 +1,6 @@
 import invariant from "invariant";
 import { baseHeaders } from "./baseHeaders";
+import { handleList } from "./handleList";
 import { handleSingle } from "./handleSingle";
 
 export async function handleRequest(request: Request): Promise<Response> {
@@ -17,6 +18,16 @@ export async function handleRequest(request: Request): Promise<Response> {
 
     if (type === "single") {
       const result = handleSingle(model);
+
+      return new Response(JSON.stringify(result), {
+        headers: baseHeaders,
+      });
+    }
+
+    if (type === "list") {
+      const take = Number(params.get("take")) || undefined;
+
+      const result = handleList({ model, take });
 
       return new Response(JSON.stringify(result), {
         headers: baseHeaders,
