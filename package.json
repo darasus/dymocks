@@ -9,10 +9,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "dev:app": "turbo run dev --filter=app",
     "dev:example": "turbo run dev --filter=example",
     "dev:worker-api": "turbo run dev --filter=dymock",
-    "deploy:worker-api": "turbo run deploy --filter=@dymock/worker-api",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
